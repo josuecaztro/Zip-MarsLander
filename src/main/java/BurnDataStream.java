@@ -4,6 +4,7 @@ public class BurnDataStream implements BurnStream {
     // burns are between 0 and 200. This burn array usually crashes.
 
     int burnArray[] = {100, 100, 200, 200, 100, 100, 0, 0, 200, 100, 100, 0, 0, 0, 0};
+//    int[] burnArray = {200,200,200,200,200,200,200,2000,200,200,200,200,200,200,200};
     int burnIdx = -1;
 
     public BurnDataStream() { }
@@ -17,6 +18,8 @@ public class BurnDataStream implements BurnStream {
             System.out.println(burnArray[burnIdx]); /*hack!*/
             return burnArray[burnIdx];
         }
+
+
         return 0;
     }
 }
